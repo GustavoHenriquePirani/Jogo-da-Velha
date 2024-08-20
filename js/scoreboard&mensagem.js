@@ -9,18 +9,17 @@ let msg = div.querySelector("p");
 
 export function mensagem(vencedor) {
   if (vencedor === "X") {
-    msg.textContent = "JOGADOR 1 VENCEU!";
     msg.classList.remove("corJogador2");
+    msg.textContent = "JOGADOR 1 VENCEU!";
     msg.classList.add("corJogador1");
   } else if (vencedor === "Bola") {
-    msg.textContent = "JOGADOR 2 VENCEU!";
     msg.classList.remove("corJogador1");
+    msg.textContent = "JOGADOR 2 VENCEU!";
     msg.classList.add("corJogador2");
   } else {
-    msg.textContent = "Deu velha :(";
     msg.classList.remove("corJogador1");
     msg.classList.remove("corJogador2");
-    msg.classList.add("corVelha");
+    msg.textContent = "Deu velha :(";
   }
   div.classList.remove("hide");
 }
@@ -28,10 +27,10 @@ export function mensagem(vencedor) {
 export function atualizarPlacar(vencedor) {
   if (vencedor === "X") {
     scoreboardX.textContent = parseInt(scoreboardX.textContent) + 1;
-    setTimeout(() => mensagem("X"), 1500);
+    setTimeout(() => mensagem("X"), 1300);
   } else if (vencedor === "Bola") {
     scoreboardBola.textContent = parseInt(scoreboardBola.textContent) + 1;
-    setTimeout(() => mensagem("Bola"), 1500);
+    setTimeout(() => mensagem("Bola"), 1300);
   } else {
     setTimeout(() => mensagem(), 500);
   }

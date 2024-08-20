@@ -12,7 +12,7 @@ let player2Selecionado = false;
 function selecionarPersonagem(personagens, classeSelecionada, jogador) {
   personagens.forEach((personagem) => {
     personagem.addEventListener("click", () => {
-      personagens.forEach((p) => p.classList.remove(classeSelecionada));
+      limparPersonagem(personagens, classeSelecionada);
 
       personagem.classList.add(classeSelecionada);
 
@@ -31,6 +31,10 @@ function selecionarPersonagem(personagens, classeSelecionada, jogador) {
 selecionarPersonagem(personagemJogador1, "player1_selected", 1);
 selecionarPersonagem(personagemJogador2, "player2_selected", 2);
 
+function limparPersonagem(personagens, classeSelecionada) {
+  personagens.forEach((p) => p.classList.remove(classeSelecionada));
+}
+
 function atualizarPersonagens() {
   const xImg = document.querySelector(".x img");
   const oImg = document.querySelector(".o img");
@@ -41,8 +45,11 @@ function atualizarPersonagens() {
 
 export {
   selecionarPersonagem,
+  limparPersonagem,
   player1Selecionado,
   player2Selecionado,
   imgJogador1,
   imgJogador2,
+  personagemJogador1,
+  personagemJogador2,
 };
