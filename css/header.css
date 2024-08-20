@@ -1,0 +1,49 @@
+body {
+  text-align: center;
+}
+
+/* TITULO E IMAGEM*/
+#header {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scale: 0.9;
+}
+
+#header div {
+  display: flex;
+  align-items: center;
+}
+
+#imagem-logo {
+  max-width: 5rem;
+  padding-left: 1.5rem;
+  rotate: 12deg;
+}
+
+#titulo {
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+/* BOTOES*/
+
+#buttons-container button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(145deg, #ff9a3a, #e67e22, #ff6f00);
+  transition: transform 0.15s ease, box-shadow 0.25s ease;
+  /*Texto*/
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 0.1rem;
+  scale: 1.25;
+}
+
+#buttons-container button:hover {
+  transform: scale(1.15);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+}

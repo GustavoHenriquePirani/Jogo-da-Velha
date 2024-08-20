@@ -1,0 +1,67 @@
+#mensagem p {
+  /* ALINHAMENTO */
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 13.5rem;
+  width: 50rem;
+  height: 22rem;
+
+  /* TEXTO */
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 6rem;
+  font-size: 4rem;
+  text-align: center;
+  font-family: "MyHero";
+
+  /* BACKGORUND */
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* transition: transform 0.15s ease, box-shadow 0.3s ease; */
+  scale: (1.1);
+}
+
+#continuar_parar {
+  position: absolute; /* Mantém a posição relativa ao contêiner #mensagem */
+  top: 25rem; /* Ajuste a posição para que fique logo abaixo do parágrafo */
+  left: 50%;
+  transform: translateX(-50%); /* Centraliza horizontalmente */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os botões na coluna */
+}
+
+.botao_msg {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(145deg, #00ff00, #00cc00, #009900);
+  transition: transform 0.15s ease, box-shadow 0.3s ease;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 0.1rem;
+  scale: 1.2;
+}
+
+.botao_msg:hover {
+  transform: scale(1.15);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+.corJogador1 {
+  text-shadow: 2px 4px 8px rgba(255, 0, 0, 0.6);
+}
+
+.corJogador2 {
+  text-shadow: 2px 4px 8px rgba(0, 0, 139, 0.6);
+}
+
+.corVelha {
+  text-shadow: none;
+}

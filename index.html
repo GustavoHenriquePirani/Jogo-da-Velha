@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="css/global.css" />
+  </head>
+  <body>
+    <div id="global-container">
+      <!-- TITULO, BOTAO -->
+      <div id="header">
+        <div>
+          <h1 id="titulo">Jogo da Velha</h1>
+          <span
+            ><img
+              src="imagens/jogo_da_velha.png"
+              alt="jogo da velha"
+              id="imagem-logo"
+          /></span>
+        </div>
+        <div id="buttons-container">
+          <button id="start">Escolher Personagem</button>
+        </div>
+      </div>
+
+      <!-- ESCOLHER PERSONAGEM -->
+      <div id="escolher_personagem" class="hide">
+        <div class="jogador" id="personagem1">
+          <h3>Jogador 1</h3>
+          <div class="personagens">
+            <div><img src="./imagens/deku.png" alt="Deku" /></div>
+            <div><img src="./imagens/tsuyu.png" alt="Tsuyu" /></div>
+            <div><img src="./imagens/all_might.png" alt="All_Might" /></div>
+            <div><img src="./imagens/uraraka.png" alt="Uraraka" /></div>
+          </div>
+        </div>
+
+        <div class="jogador">
+          <h3>Jogador 2</h3>
+          <div class="personagens" id="personagem2">
+            <div><img src="./imagens/deku.png" alt="Deku" /></div>
+            <div><img src="./imagens/tsuyu.png" alt="Tsuyu" /></div>
+            <div><img src="./imagens/all_might.png" alt="All_Might" /></div>
+            <div><img src="./imagens/uraraka.png" alt="Uraraka" /></div>
+          </div>
+        </div>
+        <div id="buttons-jogar">
+          <button id="jogar">Jogar</button>
+        </div>
+      </div>
+
+      <!-- GRADE JOGO DA VELHA -->
+      <div id="grade-container">
+        <div class="box" id="block-1"></div>
+        <div class="box" id="block-2"></div>
+        <div class="box" id="block-3"></div>
+        <div class="box" id="block-4"></div>
+        <div class="box" id="block-5"></div>
+        <div class="box" id="block-6"></div>
+        <div class="box" id="block-7"></div>
+        <div class="box" id="block-8"></div>
+        <div class="box" id="block-9"></div>
+      </div>
+
+      <!-- PLACAR -->
+      <div id="scoreboard-container" class="hide">
+        <h2>Placar</h2>
+        <div id="personagem_pontos">
+          <div class="score-box">
+            <div id="x-scoreboard"><img src="" alt="" /></div>
+            :
+            <div id="scoreboard-1">0</div>
+          </div>
+
+          <div class="score-box">
+            <div id="bola-scoreboard"><img src="" alt="" /></div>
+            :
+            <div id="scoreboard-2">0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hide">
+      <div class="x"><img src="" alt="Jogador1" /></div>
+      <div class="o"><img src="" alt="Jogador2" /></div>
+    </div>
+
+    <div id="mensagem" class="hide">
+      <p></p>
+      <div id="continuar_parar">
+        <button class="botao_msg" id="jogarNovamente">Jogar novamente</button>
+        <button class="botao_msg" id="parar">Parar</button>
+      </div>
+    </div>
+
+    <script src="js/script.js" type="module"></script>
+    <script src="js/buttons.js" type="module"></script>
+    <script src="js/selectPersonagem.js" type="module"></script>
+    <script src="js/scoreboard&mensagem.js" type="module"></script>
+    <script src="js/checkWin.js" type="module"></script>
+  </body>
+</html>

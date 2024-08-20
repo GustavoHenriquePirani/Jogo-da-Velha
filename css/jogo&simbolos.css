@@ -1,0 +1,74 @@
+/* GRADE */
+
+.box {
+  height: 7.5rem;
+  border: 2px solid #000;
+  box-sizing: border-box;
+  flex: 1 1 33%;
+}
+
+#grade-container {
+  padding: 2rem 0;
+  display: flex;
+  width: 22.5rem;
+  margin: 3rem auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  scale: 1.2;
+}
+
+/* BORDAS E QUADRADOS*/
+
+#block-1,
+#block-2,
+#block-3 {
+  border-top: none;
+}
+
+#block-7,
+#block-8,
+#block-9 {
+  border-bottom: none;
+}
+
+#block-1,
+#block-4,
+#block-7 {
+  border-left: none;
+}
+
+#block-3,
+#block-6,
+#block-9 {
+  border-right: none;
+}
+
+/* SIMBOLOS*/
+
+.x img {
+  padding-top: 0.5rem;
+  display: inline-block;
+  line-height: 7.5rem;
+  max-width: 100%;
+}
+
+.o img {
+  padding-top: 0.5rem;
+  display: inline-block;
+  line-height: 7.5rem;
+  max-width: 100%;
+}
+
+@keyframes latejar {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.latejar {
+  animation: latejar 0.75s 2;
+}

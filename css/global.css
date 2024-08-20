@@ -1,0 +1,26 @@
+/* global.css */
+
+@import url("./header.css");
+@import url("./jogo&simbolos.css");
+@import url("./scoreboard.css");
+@import url("./mensagem.css");
+@import url("./escolherPersonagem.css");
+
+@font-face {
+  font-family: "MyHero";
+  src: url("/fontes/Futura\ Display.ttf");
+}
+
+#global-container {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+/* HIDE*/
+.hide {
+  display: none !important;
+}
+
+:root {
+  --fonte-principal: "MyHero", Arial, sans-serif;
+}
