@@ -8,7 +8,10 @@
 
 @font-face {
   font-family: "MyHero";
-  src: url("/fontes/Futura\ Display.ttf");
+  src: url("../fontes/FuturaDisplay.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 #global-container {
