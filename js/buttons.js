@@ -1,7 +1,5 @@
 import { jogarDoisPlayers } from "./script.js";
 import {
-  player1Selecionado,
-  player2Selecionado,
   personagemJogador1,
   personagemJogador2,
   limparPersonagem,
@@ -20,6 +18,11 @@ const placarX = document.getElementById("scoreboard-1");
 const placarBola = document.getElementById("scoreboard-2");
 
 botaoJogar.addEventListener("click", function () {
+  const player1Selecionado =
+    document.querySelector(".player1_selected") !== null;
+  const player2Selecionado =
+    document.querySelector(".player2_selected") !== null;
+
   if (player1Selecionado && player2Selecionado) {
     let player1 = 0;
     let player2 = 0;

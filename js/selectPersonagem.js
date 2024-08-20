@@ -46,8 +46,6 @@ function atualizarPersonagens() {
 export {
   selecionarPersonagem,
   limparPersonagem,
-  player1Selecionado,
-  player2Selecionado,
   imgJogador1,
   imgJogador2,
   personagemJogador1,
