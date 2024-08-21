@@ -1,5 +1,5 @@
 /* global.css */
-
+@import url("./aside.css");
 @import url("./header.css");
 @import url("./jogo&simbolos.css");
 @import url("./scoreboard.css");
@@ -26,4 +26,292 @@
 
 :root {
   --fonte-principal: "MyHero", Arial, sans-serif;
+}
+
+/* 1250PX */
+@media (max-width: 78.125rem) {
+  #global-container {
+    scale: 0.9;
+  }
+}
+
+/* 1150PX */
+@media (max-width: 71.875rem) {
+  #global-container {
+    scale: 0.8;
+  }
+}
+
+/* 1100PX */
+@media (max-width: 68.75rem) {
+  #global-container {
+    scale: 0.7;
+  }
+}
+
+/* 1000PX */
+@media (max-width: 62.5rem) {
+  #global-container {
+    scale: 1;
+  }
+}
+
+/* 900PX */
+@media (max-width: 56.25rem) {
+  #global-container {
+    scale: 0.8;
+  }
+}
+
+/* 650px */
+@media (max-width: 40.625rem) {
+  #global-container {
+    scale: 0.6;
+  }
+}
+
+/* 344PX */
+@media (max-width: 21.5rem) {
+  #titulo {
+    font-size: 1.6rem;
+  }
+  #imagem-logo {
+    scale: 0.5;
+    margin-left: -1rem;
+  }
+  #buttons-container {
+    scale: 0.5;
+  }
+  #grade-container {
+    margin-top: -1rem;
+    scale: 0.9;
+  }
+  #escolher_personagem {
+    margin-top: -10rem;
+    scale: 0.5;
+  }
+  #scoreboard-container {
+    margin-top: -4rem;
+    scale: 0.8;
+  }
+  #mensagem p {
+    scale: 0.5;
+    position: absolute;
+    margin: 0 auto;
+    left: -14rem;
+    top: 5rem;
+    width: 50rem;
+    height: 22rem;
+    font-size: 3rem;
+  }
+  .botao_msg {
+    scale: 0.4;
+    position: absolute;
+    top: -9rem;
+    margin-top: 1rem;
+  }
+  #parar {
+    position: absolute;
+    top: -6.5rem;
+  }
+}
+
+/* Iphone SE */
+@media (max-width: 25.5rem) {
+  #global-container {
+    margin-top: -5rem;
+  }
+
+  #titulo {
+    font-size: 2rem;
+  }
+  #imagem-logo {
+    scale: 0.5;
+    margin-left: -1.5rem;
+  }
+  #buttons-container {
+    scale: 0.6;
+  }
+  #grade-container {
+    margin-top: -1rem;
+    scale: 0.9;
+  }
+  #escolher_personagem {
+    margin-top: -10rem;
+    scale: 0.5;
+  }
+  #scoreboard-container {
+    margin-top: -4rem;
+    scale: 0.8;
+  }
+  #mensagem p {
+    scale: 0.6;
+    position: absolute;
+    margin: 0 auto;
+    left: -14rem;
+    top: 6rem;
+    width: 50rem;
+    height: 22rem;
+    font-size: 3rem;
+  }
+  .botao_msg {
+    scale: 0.45;
+    position: absolute;
+    top: -9rem;
+    margin-top: 1rem;
+  }
+  #parar {
+    position: absolute;
+    top: -6.5rem;
+  }
+}
+
+/* Iphone XR */
+@media (max-width: 25.875rem) {
+  #titulo {
+    font-size: 3.5rem;
+    margin-left: -1rem;
+  }
+  #imagem-logo {
+    scale: 1.2;
+    padding-left: 0;
+    margin-left: -2rem;
+  }
+  #buttons-container {
+    scale: 0.7;
+  }
+  #grade-container {
+    margin-top: 0rem;
+    scale: 1;
+  }
+  #escolher_personagem {
+    margin-top: -9rem;
+    scale: 0.6;
+  }
+  #scoreboard-container {
+    margin-top: -4rem;
+    scale: 0.8;
+  }
+  #mensagem p {
+    scale: 0.6;
+    position: absolute;
+    margin: 0 auto;
+    left: -12rem;
+    top: 12.5rem;
+    width: 50rem;
+    height: 22rem;
+    font-size: 3.5rem;
+  }
+  .botao_msg {
+    scale: 0.5;
+    position: absolute;
+    top: -2rem;
+    margin-top: 1rem;
+    width: 10rem;
+  }
+  #parar {
+    position: absolute;
+    top: 0.5rem;
+  }
+}
+
+/* Iphone 12 */
+@media (max-width: 24.375rem) {
+  #titulo {
+    font-size: 3.5rem;
+    margin-left: -1rem;
+  }
+  #imagem-logo {
+    scale: 1.2;
+    padding-left: 0;
+    margin-left: -2rem;
+  }
+  #buttons-container {
+    scale: 0.7;
+  }
+  #grade-container {
+    margin-top: 0rem;
+    scale: 1;
+  }
+  #escolher_personagem {
+    margin-top: -9rem;
+    scale: 0.6;
+  }
+  #scoreboard-container {
+    margin-top: -4rem;
+    scale: 0.8;
+  }
+  #mensagem p {
+    scale: 0.6;
+    position: absolute;
+    margin: 0 auto;
+    left: -3rem;
+    top: 8rem;
+    width: 30rem;
+    height: 22rem;
+    font-size: 3.5rem;
+  }
+  .botao_msg {
+    scale: 0.5;
+    position: absolute;
+    top: -6rem;
+    margin-top: 1rem;
+    width: 10rem;
+  }
+  #parar {
+    position: absolute;
+    top: -3rem;
+  }
+}
+
+/* Iphone 14Pro */
+@media (max-width: 26.875rem) {
+  #global-container {
+    scale: 0.85;
+  }
+  #titulo {
+    font-size: 3.5rem;
+    margin-left: -1rem;
+  }
+  #imagem-logo {
+    scale: 1.2;
+    padding-left: 0;
+    margin-left: -2rem;
+  }
+  #buttons-container {
+    scale: 0.7;
+  }
+  #grade-container {
+    margin-top: 0rem;
+    scale: 1;
+  }
+  #escolher_personagem {
+    margin-top: -10rem;
+    scale: 0.5;
+  }
+  #scoreboard-container {
+    margin-top: -4rem;
+    scale: 0.8;
+  }
+  #mensagem p {
+    scale: 0.6;
+    position: absolute;
+    margin: 0 auto;
+    left: -6.5rem;
+    top: 10rem;
+    width: 40rem;
+    height: 28rem;
+    font-size: 3.8rem;
+  }
+  .botao_msg {
+    scale: 0.6;
+    position: absolute;
+    top: -2.5rem;
+    margin-top: 1rem;
+    width: 12rem;
+  }
+  #parar {
+    position: absolute;
+    top: 0.5rem;
+  }
 }
