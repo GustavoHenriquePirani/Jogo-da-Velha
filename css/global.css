@@ -215,23 +215,27 @@
   }
 }
 
-/* Iphone 12 */
+/* Iphone 12PRO*/
 @media (max-width: 24.375rem) {
+  #header {
+    padding-top: 3rem;
+  }
   #titulo {
     font-size: 3.5rem;
     margin-left: -1rem;
+    scale: 0.8;
   }
   #imagem-logo {
-    scale: 1.2;
-    padding-left: 0;
-    margin-left: -2rem;
+    margin-right: 1.5rem;
+    max-width: 3.5rem;
   }
   #buttons-container {
-    scale: 0.7;
+    margin-top: -1rem;
+    scale: 0.65;
   }
   #grade-container {
-    margin-top: 0rem;
     scale: 1;
+    max-width: 20rem;
   }
   #escolher_personagem {
     margin-top: -9rem;
@@ -262,6 +266,13 @@
     position: absolute;
     top: -3rem;
   }
+  #esquerda {
+    display: none;
+  }
+
+  #direita {
+    display: none;
+  }
 }
 
 /* Iphone 14Pro */
@@ -287,7 +298,7 @@
   }
   #escolher_personagem {
     margin-top: -10rem;
-    scale: 0.5;
+    scale: 0.45;
   }
   #scoreboard-container {
     margin-top: -4rem;
@@ -297,8 +308,8 @@
     scale: 0.6;
     position: absolute;
     margin: 0 auto;
-    left: -6.5rem;
-    top: 10rem;
+    left: -8rem;
+    top: 7rem;
     width: 40rem;
     height: 28rem;
     font-size: 3.8rem;
@@ -306,12 +317,19 @@
   .botao_msg {
     scale: 0.6;
     position: absolute;
-    top: -2.5rem;
+    top: -5.5rem;
     margin-top: 1rem;
     width: 12rem;
   }
   #parar {
     position: absolute;
-    top: 0.5rem;
+    top: -2.5rem;
+  }
+  #esquerda {
+    display: none;
+  }
+
+  #direita {
+    display: none;
   }
 }
